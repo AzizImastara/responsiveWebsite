@@ -1,0 +1,24 @@
+h3 {
+  color: green;
+}
+
+h2 {
+  color: pink;
+}
+
+/* TAG ELEMENT = 1 */
+/* CLASS = 10 */
+/* ID = 100 */
+/* INLINE CSS = 1000 */
+/* !IMPORTANT */
+.header__title {
+  color: orange;
+}
+
+/* h3.header__title {
+  color: red;
+} */
+
+#title {
+  color: coral;
+}
