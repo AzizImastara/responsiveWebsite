@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero--caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero--caption h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #a0a3bd;
+}
+
+.hero--caption h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.hero--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie__show {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px 0;
+}
+
+.upcoming {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upcoming__month {
+  padding-top: 40px;
+}
+
+.upcoming__month ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.upcoming__month--list {
+  border: 1px solid #9570fe;
+  border-radius: 4px;
+  width: 100%;
+  margin: 12px;
+}
+
+.upcoming__month--link {
+  text-decoration: none;
+  color: #9570fe;
+}
+
+.upcoming__month--list:hover {
+  color: #fff;
+  background-color: #5f2eea;
+}
+
+.upcoming__month--link:hover {
+  color: #fff;
+}
+
+.movie__upcoming {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px 0;
+}
+
+.movie__upcoming--detail {
+  text-align: center;
+}
+
+.movie__upcoming--detail h4 {
+  font-size: 24px;
+  color: #14142b;
+  padding-top: 24px;
+}
+
+.movie__upcoming--detail p {
+  font-size: 12px;
+  color: #a0a3bd;
+}
+
+.movie__upcoming--detail button {
+  width: 100%;
+  border: 1px solid #5f2eea;
+  color: #5f2eea;
+  padding: 4px 0;
+  border-radius: 4px;
+}
+
+.join__desc h2 {
+  color: #4e4b66;
+  font-size: 24px;
+}
+
+.join__desc h1 {
+  color: #5f2eea;
+  font-size: 48px;
+}
+
+.join__input {
+  padding: 32px;
+}
+
+.join__input input {
+  padding: 4px;
+  margin-right: 4px;
+}
+
+.join__caption p {
+  font-size: 12px;
+  color: #6e7191;
+}
+
+.footer {
+  padding: 80px;
+}
+
+/* .footer__content--desc {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.footer__content img:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  padding: 8% 0;
+}
+
+footer {
+  text-align: center;
+  padding-top: 24px;
+}
