@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  margin-top: 40px;
+}
+
+.payment h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.dashboard__payment {
+  padding: 24px;
+  /* text-decoration: underline; */
+}
+
+.payment--info p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #6b6b6b;
+  padding: 8px;
+}
+
+.payment--detail {
+  text-align: right;
+}
+
+.payment--detail p {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+}
+
+.dashboard__personal {
+  padding: 24px;
+  /* width: 100%; */
+  /* background-color: #5f2eea; */
+}
+
+.dashboard__personal p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #696f79;
+  /* margin-top: 40px; */
+}
+
+.dashboard__personal input {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.personal h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.personal__error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  /* background-color: #f4b740; */
+  /* opacity: 0.3; */
+  width: 100%;
+  background: rgba(244, 183, 64, 0.3);
+  margin-top: 24px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.personal__error p {
+  font-size: 16px;
+  color: #4e4b66;
+  margin: 0;
+}
+
+.personal__error i {
+  margin-right: 12px;
+}
+
+.payment__method h3 {
+  color: #14142b;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.payment__method--logo {
+  margin: 12px;
+  /* width: 100%; */
+  /* background-color: aqua; */
+}
+
+.sign-or {
+  text-align: center;
+}
+
+.sign-or p {
+  width: 20%;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px 4px;
+  margin: 0;
+}
+
+.sign-or-line {
+  border-top: 2px solid black;
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sign--forgot {
+  display: flex;
+  justify-content: center;
+}
+
+.sign--forgot p:nth-child(2) {
+  color: #2b156bcc;
+  padding-left: 4px;
+}
+
+.payment__button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment__button button {
+  border: 2px solid #5f2eea;
+  width: 100%;
+  /* margin: 24px; */
+  padding: 12px;
+}
+
+.payment__button button:nth-child(1) {
+  margin-right: 24px;
+}
+
+.payment__button button:nth-child(2) {
+  margin-left: 24px;
+}
+
+.footer {
+  padding: 80px;
+}
+
+/* .footer__content--desc {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.footer__content img:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  padding: 8% 0;
+}
+
+footer {
+  text-align: center;
+  padding-top: 24px;
+}

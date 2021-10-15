@@ -37,6 +37,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
   /* margin-top: 350px; */
 }
 
@@ -47,29 +48,70 @@
 }
 
 .form__right {
-  background-color: coral;
-}
-
-.sign--button {
+  /* background-color: coral; */
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 24px 0;
+  /* padding: 100px; */
 }
 
-.sign--button button {
-  border-radius: 4px;
-  width: 400px;
-  height: 64px;
+.form__right h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #121212;
+}
+
+.form__right span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.form__right--input p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e4b66;
+}
+
+.form__right--input input {
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.form__right--button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 12px;
+  color: #f7f7fc;
+  background-color: #5f2eea;
+  outline: none;
+  border: none;
 }
 
 .sign--forgot {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.sign--forgot p:nth-child(2) {
-  color: #2b156bcc;
-  padding-left: 4px;
+.sign--forgot::after {
+  content: "Reset now";
+  text-decoration: underline;
+  color: #5f2eea;
+  margin: 12px 0 0 4px;
+}
+
+.sign--forgot p {
+  color: #8692a6;
+  margin-top: 12px;
+  margin: 12px 0 0 0;
 }
 
 .sign-or {
@@ -86,7 +128,7 @@
 }
 
 .sign-or-line {
-  border-top: 2px solid black;
+  border-top: 1px solid black;
   width: 30%;
   display: inline-block;
   vertical-align: middle;
@@ -94,22 +136,33 @@
 
 .icon__button {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon__button--content {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
+.icon__button--content p {
+  margin: 0 0 0 12px;
+}
+
 .icon__button button {
-  display: flex;
-  flex-direction: row;
-  padding: 8px 44px;
-  margin: 12px;
-  align-items: center;
-  text-align: center;
+  width: 100%;
+  padding: 12px;
+  background-color: #e5e5e5;
+  border-radius: 8px;
+  border: none;
+  outline: none;
 }
 
 .icon__button button:nth-child(1) {
-  margin-left: 24px;
+  margin-right: 12px;
 }
 
-.icon__button img {
-  margin-right: 12px;
+.icon__button button:nth-child(2) {
+  margin-left: 12px;
 }
