@@ -11,11 +11,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/login.css">
 
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"/>
+
     <title>Login</title>
   </head>
   <body>
-    
-    <div class="row">
+    <!-- <div class="container"> -->
+    <div class="row image">
       <!-- <div class="container"> -->
         <div class="col-md-7 d-none d-md-inline-block image__left">
           <div class="image__left--img">
@@ -28,38 +31,42 @@
         </div>
 
         <div class="col-md-5 col-sm-12 form__right">
-          <h2>Sign In</h2>
-          <span>Sign in with your data that you entered during your registration</span>
-            <div class="form__right--input">
-              <p>Email</p>
-              <input type="email" placeholder="Write your email">
-              <p>Password</p>
-              <input type="password" placeholder="Write your password">
-              <div class="form__right--button">
-                <button>Sign In</button>
+          <div class="form__right--detail">
+            <h2>Sign In</h2>
+            <span>Sign in with your data that you entered during your registration</span>
+              <div class="form__right--input">
+                <p>Email</p>
+                <input type="email" placeholder="Write your email">
+                <p>Password</p>
+                <input type="password" placeholder="Write your password">
+                <!-- <i class="bi bi-eye"></i> -->
+                <div class="form__right--button">
+                  <button>Sign In</button>
+                </div>
               </div>
+            <div class="sign--forgot">
+              <p>Forgot your password?</p>
             </div>
-          <div class="sign--forgot">
-            <p>Forgot your password?</p>
-          </div>
-          <div class="sign-or">
-            <span class="sign-or-line"></span>
-            <p>Or</p>
-            <span class="sign-or-line"></span>
-          </div>
-          <div class="icon__button">
-            <button class="icon__button--content">
-              <img src="assets/img/googleIcon.svg" alt="googleIcon">
-              <p>Google</p>
-            </button>
-            <button class="icon__button--content">
-              <img src="assets/img/facebookIcon.svg" alt="facebookIcon">
-              <p>Facebook</p>
-            </button>
+            <div class="sign-or">
+              <span class="sign-or-line"></span>
+              <p>Or</p>
+              <span class="sign-or-line"></span>
+            </div>
+            <div class="icon__button">
+              <button class="icon__button--content">
+                <img src="assets/img/googleIcon.svg" alt="googleIcon">
+                <p>Google</p>
+              </button>
+              <button class="icon__button--content">
+                <img src="assets/img/facebookIcon.svg" alt="facebookIcon">
+                <p>Facebook</p>
+              </button>
+            </div>
           </div>
         </div>
       <!-- </div> -->
     </div>
+    <!-- </div> -->
 
 
 

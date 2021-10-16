@@ -11,6 +11,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/movieDetail.css">
 
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"/>
+
     <title>Movie Detail</title>
   </head>
   <body>
@@ -56,7 +59,7 @@
         </div>
       </nav>
 
-      <div class="row">
+      <div class="row hero">
         <div class="col-4 hero__left">
           <div class="hero__left--border">
             <img src="assets/img/Spiderman.png" alt="spiderman">
@@ -65,7 +68,7 @@
         <div class="col-8 hero__right">
           <h1>Spider-Man: Homecoming</h1>
           <h2>Adventure, Action, Sci-Fi</h2>
-          <div class="row">
+          <div class="row hero__right--flex">
             <div class=" col-4 hero__right--desc">
               <p>Release date</p>
               <h4>June 28, 2017</h4>
@@ -88,28 +91,30 @@
 
       <div class="showtimes">
         <h2>Showtimes and Tickets</h2>
-        <div class="row">
+        <form class="row">
           <div class="col-6 dropdown">
-            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"  aria-expanded="false">
+              <i class="bi bi-calendar2"></i>
               21/07/20
             </button>
           </div>
           <div class="col-6 dropdown">
             <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/img/location.svg" alt="set location">
               Purwokerto
             </button>
           </div>
-        </div>
+        </form>
       </div>
 
       <div class="schedule">
-        <div class="row">
+        <div class="row schedule__row">
           <div class="col schedule__movie">
             <div class="row">
-              <div class="col schedule__movie--cinema">
+              <div class="col-12 col-lg-6 schedule__movie--cinema">
                 <img src="assets/img/ebuid-mini.png" alt="mini">
               </div>
-              <div class="col schedule__movie--adress">
+              <div class="col-12 col-lg-6 schedule__movie--adress">
                 <h4>ebv.id</h4>
                 <p>Whatever street No.12, South Purwokerto</p>
               </div>
@@ -150,10 +155,10 @@
           </div>
           <div class="col schedule__movie">
             <div class="row">
-              <div class="col schedule__movie--cinema">
+              <div class="col-12 col-lg-6 schedule__movie--cinema">
                 <img src="assets/img/cineone-mini.png" alt="mini">
               </div>
-              <div class="col schedule__movie--adress">
+              <div class="col-12 col-lg-6 schedule__movie--adress">
                 <h4>CineOne21</h4>
                 <p>Downcare street  No. 21, East Purwokerto</p>
               </div>
@@ -194,10 +199,10 @@
           </div>
           <div class="col schedule__movie">
             <div class="row">
-              <div class="col schedule__movie--cinema">
+              <div class="col-12 col-lg-6 schedule__movie--cinema">
                 <img src="assets/img/hiflix-mini.png" alt="mini">
               </div>
-              <div class="col schedule__movie--adress">
+              <div class="col-12 col-lg-6 schedule__movie--adress">
                 <h4>hiflix Cinema</h4>
                 <p>Colonel street No. 2, East Purwokerto</p>
               </div>
@@ -239,13 +244,13 @@
         </div>
       </div>
       <div class="schedule">
-        <div class="row">
+        <div class="row schedule__row">
           <div class="col schedule__movie">
             <div class="row">
-              <div class="col schedule__movie--cinema">
+              <div class="col-12 col-lg-6 schedule__movie--cinema">
                 <img src="assets/img/ebuid-mini.png" alt="mini">
               </div>
-              <div class="col schedule__movie--adress">
+              <div class="col-12 col-lg-6 schedule__movie--adress">
                 <h4>ebv.id</h4>
                 <p>Whatever street No.12, South Purwokerto</p>
               </div>
@@ -286,10 +291,10 @@
           </div>
           <div class="col schedule__movie">
             <div class="row">
-              <div class="col schedule__movie--cinema">
+              <div class="col-12 col-lg-6 schedule__movie--cinema">
                 <img src="assets/img/cineone-mini.png" alt="mini">
               </div>
-              <div class="col schedule__movie--adress">
+              <div class="col-12 col-lg-6 schedule__movie--adress">
                 <h4>CineOne21</h4>
                 <p>Downcare street  No. 21, East Purwokerto</p>
               </div>
@@ -330,10 +335,10 @@
           </div>
           <div class="col schedule__movie">
             <div class="row">
-              <div class="col schedule__movie--cinema">
+              <div class="col-12 col-lg-6 schedule__movie--cinema">
                 <img src="assets/img/hiflix-mini.png" alt="mini">
               </div>
-              <div class="col schedule__movie--adress">
+              <div class="col-12 col-lg-6 schedule__movie--adress">
                 <h4>hiflix Cinema</h4>
                 <p>Colonel street No. 2, East Purwokerto</p>
               </div>
@@ -381,36 +386,59 @@
 
       <div class="row footer">
         <div class="col-4 footer__content">
-          <img src="assets/img/Vector.png" alt="logoBerwarna">
-          <p class="footer__content--desc">Stop waiting in line. Buy tickets <br>
+          <div class="footer__content--logo">
+            <img src="assets/img/Vector.png" alt="logoBerwarna">
+            <p>Stop waiting in line. Buy tickets <br>
             conveniently, watch movies quietly.</p>
+          </div>
         </div>
-        <div class="col footer__content">
-          <h3>Explore</h3>
-          <p>Cinemas</p>
-          <p>Movies list</p>
-          <p>My ticket</p>
-          <p>Notification</p>
+        <div class="col-2 footer__content">
+            <h3>Explore</h3>
+          <div class="footer__content--header--desc">
+            <p>Cinemas</p>
+            <p>Movies list</p>
+            <p>My ticket</p>
+            <p>Notification</p>
+          </div>
         </div>
-        <div class="col footer__content">
+        <div class="col-3 footer__content">
           <h3>Our Sponsor</h3>
-          <img src="assets/img/ebuid.png" alt="ebuid">
-          <img src="assets/img/cineone.png" alt="cineone">
-          <img src="assets/img/hiflix.png" alt="hiflix">
+          <div class="footer__content--header--img">
+            <div class="footer__content--header--size">
+              <img src="assets/img/ebuid.png" alt="ebuid">
+            </div>
+            <div class="footer__content--header--size">
+              <img src="assets/img/cineone.png" alt="cineone">
+            </div>
+            <div class="footer__content--header--size">
+              <img src="assets/img/hiflix.png" alt="hiflix">
+            </div>
+          </div>
         </div>
-        <div class="col footer__content">
+        <div class="col-3 footer__content">
           <h3>Follow Us</h3>
-          <p>Tickitz Cinema id</p>
-          <p>tickitz.id</p>
-          <p>tickitz.id</p>
-          <p>Tickitz Cinema id</p>
+          <div class="footer__content--header">
+            <div class="footer__content--page">
+              <img src="assets/img/facebook.png" alt="">
+              <p>Tickitz Cinema id</p>
+            </div>
+            <div class="footer__content--page">
+              <img src="assets/img/instagram.png" alt="">
+              <p>tickitz.id</p>
+            </div>
+            <div class="footer__content--page">
+              <img src="assets/img/twitter.png" alt="">
+              <p>tickitz.id</p>
+            </div>
+            <div class="footer__content--page">
+              <img src="assets/img/yt.png" alt="">
+              <p>Tickitz Cinema id</p>
+            </div>
+          </div>
         </div>
 
-        <footer>© 2020 Tickitz. All Rights Reserved.</footer>
+      <footer>© 2020 Tickitz. All Rights Reserved.</footer>
       </div>
-
-
-
 
 
     </div>

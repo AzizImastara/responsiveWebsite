@@ -1,16 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+.image {
+  width: 100%;
 }
 
 .image__left {
-  background-color: aqua;
   height: 1024px;
+  /* width: 100%; */
 }
 
 .image__left--img {
-  /* background-image: url(../img/coverlogin.png); */
   background-size: cover;
   position: absolute;
   z-index: 1;
@@ -53,7 +59,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 100px; */
+}
+
+.form__right--detail {
+  padding: 60px;
 }
 
 .form__right h2 {
