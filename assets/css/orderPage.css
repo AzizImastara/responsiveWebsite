@@ -1,12 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
 }
 
-.detail {
-  margin-top: 40px;
+.detail__bg {
+  background-color: #e5e5e5;
+  padding: 2rem 0;
 }
+
+/* .detail {
+  width: 100%;
+} */
 
 .movie h4 {
   font-size: 24px;
@@ -25,7 +33,8 @@
   display: flex;
   justify-content: space-between;
   padding: 24px;
-  background-color: aqua;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .movie__selected h5 {
@@ -39,14 +48,15 @@
   color: #5f2eea;
   border-radius: 8px;
   background-color: #d6d8e7;
-  padding: 8px;
+  padding: 12px;
   border: none;
   font-size: 14px;
 }
 
 .order__background {
-  background-color: aqua;
-  padding: 24px;
+  background-color: #fff;
+  padding: 28px;
+  border-radius: 8px;
 }
 
 .order__header {
@@ -63,6 +73,11 @@
   margin-top: 8px;
   margin-bottom: 12px;
 }
+
+.order__detail--title {
+  display: none;
+}
+
 .order__detail--info p {
   color: #6b6b6b;
   font-size: 14px;
@@ -81,6 +96,8 @@
 
 .order__payment {
   margin-top: 24px;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 24px;
 }
 
 .order__payment--total p {
@@ -99,7 +116,8 @@
 .seat {
   width: 100%;
   height: 300px;
-  background-color: #5f2eea;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .seat__button {
@@ -116,8 +134,173 @@
 
 .seat__button button:nth-child(1) {
   margin-right: 24px;
+  color: #5f2eea;
 }
 
 .seat__button button:nth-child(2) {
   margin-left: 24px;
+}
+
+.seat__button--mobile {
+  display: none;
+}
+
+.seat__button--mobile button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+.footer {
+  padding-top: 80px;
+}
+
+.footer__content--logo img {
+  margin-bottom: 24px;
+}
+
+.footer__content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.footer__content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4e4b66;
+}
+
+.footer__content img:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  padding: 8% 0;
+}
+
+.footer__content--page {
+  display: flex;
+  padding: 8px 0;
+}
+
+.footer__content--page img {
+  margin-right: 8px;
+}
+
+.footer__content--page p {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 0 24px 0;
+}
+
+@media (max-width: 991.98px) {
+  .detail {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .movie__none {
+    display: none;
+  }
+
+  .movie__selected {
+    display: none;
+  }
+
+  .seat__button {
+    display: none;
+  }
+
+  .seat__button--mobile {
+    display: flex;
+  }
+
+  .order__detail--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .order__detail--info p:nth-child(1) {
+    display: none;
+  }
+
+  .order__detail--desc p:nth-child(1) {
+    display: none;
+  }
+
+  /* .order__detail--desc p:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #5f2eea;
+  } */
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__content--header--img {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__content--header {
+    display: flex;
+  }
+
+  .footer__content h3 {
+    margin-top: 32px;
+  }
+
+  .footer__content--header--desc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer__content--header--desc p {
+    padding: 0.5rem 1rem;
+  }
+
+  .footer__content--header--size {
+    margin: 0 12px 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__content--header--size img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__content--page img {
+    display: flex;
+    flex-direction: row;
+    margin-right: 32px;
+  }
+  .footer__content--page p {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-start;
+  }
 }

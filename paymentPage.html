@@ -19,9 +19,8 @@
   </head>
   <body>
   
-  <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#"><img src="assets/img/Vector.png" alt="logoBerwarna"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -62,121 +61,162 @@
     </nav>
     
 
-    <div class="row dashboard">
-      <div class="col-8 payment">
-        <h3>Payment Info</h3>
-          <div class="row dashboard__payment">
-            <div class="col payment--info">
-              <p>Date & Time</p>
-              <p>Movie title</p>
-              <p>Cinema name</p>
-              <p>Number of tickets</p>
-              <p>Total Payment</p>
-            </div>
-            <div class="col payment--detail">
-              <p>Tuesday, 07 July 2020 at 02:00pm</p>
-              <p>Spider-Man: Homecoming</p>
-              <p>CineOne21 Cinema</p>
-              <p>3 pieces</p>
-              <p>$30,00</p>
-            </div>
-          </div>
-      </div>
-      <div class="col-4 personal">
-        <h3>Personal Info</h3>
-          <div class="col dashboard__personal">
-            <p>Full Name</p>
-            <input type="text" placeholder="Jonas El Rodriguez">
-            <p>Email</p>
-            <input type="email" placeholder="jonasrodri123@gmail.com">
-            <p>Phone Number</p>
-            <input type="number" placeholder="+62 | 81445687121">
-              <div class="personal__error">
-                <i class="bi bi-exclamation-triangle-fill" style="font-size: 2rem; color: #F4B740;"></i>
-                <p>Fill your data correctly.</p>
+    <div class="dashboard__bg">
+      <div class="container">
+        <div class="row dashboard">
+          <div class="col-lg-8 col-sm-6 payment">
+            <h3>Payment Info</h3>
+              <div class="dashboard__payment">
+                <div class="payment--info">
+                  <p>Date & Time</p>
+                  <p>Tuesday, 07 July 2020 at 02:00pm</p>
+                </div>
+                <div class="payment--info">
+                  <p>Movie title</p>
+                  <p>Spider-Man: Homecoming</p>
+                </div>
+                <div class="payment--info">
+                  <p>Cinema name</p>
+                  <p>CineOne21 Cinema</p>
+                </div>
+                <div class="payment--info">
+                  <p>Number of tickets</p>
+                  <p>3 pieces</p>
+                </div>
+                <div class="row order__payment">
+                  <div class="col order__payment--total">
+                    <p>Total Payment</p>
+                  </div>
+                  <div class="col order__payment--price">
+                    <p>$30,00</p>
+                  </div>
+                </div>
+              </div>
+              <h3>Choose a Payment Method</h3>
+                <div class="payment__method">
+                  <div class="row">
+                    <div class="col payment__method--logo">
+                        <img src="assets/img/GoogleePay.png" alt="ovo">
+                    </div>
+                    <div class="col payment__method--logo">
+                        <img src="assets/img/Visa.png" alt="ovo">
+                    </div>
+                    <div class="col payment__method--logo">
+                        <img src="assets/img/GoPayy.png" alt="ovo">
+                    </div>
+                    <div class="col payment__method--logo">
+                        <img src="assets/img/Paypal.png" alt="ovo">
+                    </div>
+                  </div>
+                  <div class="row logo__none">
+                    <div class="col payment__method--logo">
+                        <img src="assets/img/Dana.png" alt="ovo">
+                    </div>
+                    <div class="col payment__method--logo">
+                        <img src="assets/img/BCA.png" alt="ovo">
+                    </div>
+                    <div class="col payment__method--logo">
+                        <img src="assets/img/BRI.png" alt="ovo">
+                    </div>
+                    <div class="col payment__method--logo">
+                        <img src="assets/img/OVO.png" alt="ovo">
+                    </div>
+                  </div>
+                  <div class="sign-or">
+                    <span class="sign-or-line"></span>
+                    <p>Or</p>
+                    <span class="sign-or-line"></span>
+                  </div>
+                  <div class="sign--forgot">
+                    <p>Pay via cash.</p>
+                    <p>See how it work</p>
+                  </div>
+                  <div class="payment__button">
+                    <button class="btn btn-light">Prvious step</button>
+                    <button class="btn btn-primary">Pay your order</button>
+                  </div>
               </div>
           </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-8 payment__method">
-        <h3>Choose a Payment Method</h3>
-          <div class="row">
-            <div class="col-2 payment__method--logo">
-                <img src="assets/img/OVO.png" alt="ovo">
-            </div>
-            <div class="col-2 payment__method--logo">
-                <img src="assets/img/OVO.png" alt="ovo">
-            </div>
-            <div class="col-2 payment__method--logo">
-                <img src="assets/img/OVO.png" alt="ovo">
-            </div>
-            <div class="col-2 payment__method--logo">
-                <img src="assets/img/OVO.png" alt="ovo">
-            </div>
-            <div class="col-2 payment__method--logo">
-                <img src="assets/img/OVO.png" alt="ovo">
-            </div>
-            <div class="col-2 payment__method--logo">
-                <img src="assets/img/OVO.png" alt="ovo">
-            </div>
-            <div class="col-2 payment__method--logo">
-                <img src="assets/img/OVO.png" alt="ovo">
-            </div>
-            <div class="col-2 payment__method--logo">
-                <img src="assets/img/OVO.png" alt="ovo">
-            </div>
+          <div class="col-lg-4 col-sm-6 personal">
+            <h3>Personal Info</h3>
+              <div class="col dashboard__personal">
+                <p>Full Name</p>
+                <input type="text" placeholder="Jonas El Rodriguez">
+                <p>Email</p>
+                <input type="email" placeholder="jonasrodri123@gmail.com">
+                <p>Phone Number</p>
+                <input type="number" placeholder="+62 | 81445687121">
+                  <div class="personal__error">
+                    <i class="bi bi-exclamation-triangle-fill" style="font-size: 2rem; color: #F4B740;"></i>
+                    <p>Fill your data correctly.</p>
+                  </div>
+              </div>
+              <div class="payment__button--mobile">
+                <button class="btn btn-primary">Pay your order</button>
+              </div>
           </div>
-          <div class="sign-or">
-            <span class="sign-or-line"></span>
-            <p>Or</p>
-            <span class="sign-or-line"></span>
-          </div>
-          <div class="sign--forgot">
-            <p>Pay via cash.</p>
-            <p>See how it work</p>
-          </div>
-          <div class="payment__button">
-            <button class="btn btn-light">Prvious step</button>
-            <button class="btn btn-primary">Pay your order</button>
-          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row footer">
-      <div class="col-4 footer__content">
-        <img src="assets/img/Vector.png" alt="logoBerwarna">
-        <p class="footer__content--desc">Stop waiting in line. Buy tickets <br>
-          conveniently, watch movies quietly.</p>
-      </div>
-      <div class="col footer__content">
-        <h3>Explore</h3>
-        <p>Cinemas</p>
-        <p>Movies list</p>
-        <p>My ticket</p>
-        <p>Notification</p>
-      </div>
-      <div class="col footer__content">
-        <h3>Our Sponsor</h3>
-        <img src="assets/img/ebuid.png" alt="ebuid">
-        <img src="assets/img/cineone.png" alt="cineone">
-        <img src="assets/img/hiflix.png" alt="hiflix">
-      </div>
-      <div class="col footer__content">
-        <h3>Follow Us</h3>
-        <p>Tickitz Cinema id</p>
-        <p>tickitz.id</p>
-        <p>tickitz.id</p>
-        <p>Tickitz Cinema id</p>
-      </div>
+    <div class="container">
+      <div class="row footer">
+        <div class="col-4 footer__content">
+          <div class="footer__content--logo">
+            <img src="assets/img/Vector.png" alt="logoBerwarna">
+            <p>Stop waiting in line. Buy tickets <br>
+            conveniently, watch movies quietly.</p>
+          </div>
+        </div>
+        <div class="col-2 footer__content">
+            <h3>Explore</h3>
+          <div class="footer__content--header--desc">
+            <p>Cinemas</p>
+            <p>Movies list</p>
+            <p>My ticket</p>
+            <p>Notification</p>
+          </div>
+        </div>
+        <div class="col-3 footer__content">
+          <h3>Our Sponsor</h3>
+          <div class="footer__content--header--img">
+            <div class="footer__content--header--size">
+              <img src="assets/img/ebuid.png" alt="ebuid">
+            </div>
+            <div class="footer__content--header--size">
+              <img src="assets/img/cineone.png" alt="cineone">
+            </div>
+            <div class="footer__content--header--size">
+              <img src="assets/img/hiflix.png" alt="hiflix">
+            </div>
+          </div>
+        </div>
+        <div class="col-3 footer__content">
+          <h3>Follow Us</h3>
+          <div class="footer__content--header">
+            <div class="footer__content--page">
+              <img src="assets/img/facebook.png" alt="">
+              <p>Tickitz Cinema id</p>
+            </div>
+            <div class="footer__content--page">
+              <img src="assets/img/instagram.png" alt="">
+              <p>tickitz.id</p>
+            </div>
+            <div class="footer__content--page">
+              <img src="assets/img/twitter.png" alt="">
+              <p>tickitz.id</p>
+            </div>
+            <div class="footer__content--page">
+              <img src="assets/img/yt.png" alt="">
+              <p>Tickitz Cinema id</p>
+            </div>
+          </div>
+        </div>
 
       <footer>© 2020 Tickitz. All Rights Reserved.</footer>
+      </div>
     </div>
 
-
-
-
-  </div>
 
 
 

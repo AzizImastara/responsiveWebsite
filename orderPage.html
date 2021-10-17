@@ -14,9 +14,9 @@
     <title>Order Page</title>
   </head>
   <body>
-  <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+      <div class="container">
+      <!-- <div class="container-fluid"> -->
         <a class="navbar-brand" href="#"><img src="assets/img/Vector.png" alt="logoBerwarna"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,61 +53,127 @@
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
+      <!-- </div> -->
       </div>
     </nav>
 
-
-    <div class="row detail">
-      <div class="col-7 movie">
-        <h4>Movie Selected</h4>
-        <div class="movie__selected">
-          <h5>Spider-Man: Homecoming</h5>
-          <button>Change movie</button>
-        </div>
-        <div class="movie__seat">
-        <h4>Choose Your Seat</h4>
-        </div>
-        <div class="seat"></div>
-        <div class="seat__button">
-          <button class="btn btn-light">Change your movie</button>
-          <button class="btn btn-primary">Checkout now</button>
-        </div>
-      </div>
-      <div class="col-5 order">
-        <h4>Order Info</h4>
-        <div class="order__background">
-          <div class="order__header">
-            <img src="assets/img/cineone-mini.png" alt="cineone-mini">
-            <h5>CineOne21 Cinema</h5>
-          </div>
-          <div class="row order__detail">
-            <div class="col order__detail--info">
-              <p>Movie selected</p>
-              <p>Tuesday, 07 July 2020</p>
-              <p>One ticket price</p>
-              <p>Seat choosed</p>
+    <div class="detail__bg">
+      <div class="container">
+        <div class="row detail">
+          <div class="col-lg-7 col-sm-6 movie">
+            <h4 class="movie__none">Movie Selected</h4>
+            <div class="movie__selected">
+              <h5>Spider-Man: Homecoming</h5>
+              <button>Change movie</button>
             </div>
-            <div class="col order__detail--desc">
-              <p>Spider-Man: Homecoming</p>
-              <p>02:00pm</p>
-              <p>$10</p>
-              <p>C4, C5, C6</p>
+            <div class="movie__seat">
+            <h4>Choose Your Seat</h4>
+            </div>
+            <div class="seat"></div>
+            <div class="seat__button">
+              <button class="btn btn-light">Change your movie</button>
+              <button class="btn btn-primary">Checkout now</button>
             </div>
           </div>
-          <div class="row order__payment">
-            <div class="col order__payment--total">
-              <p>Total Payment</p>
+          <div class="col-lg-5 col-sm-6 order">
+            <h4>Order Info</h4>
+            <div class="order__background">
+              <div class="order__header">
+                <img src="assets/img/cineone-mini.png" alt="cineone-mini">
+                <h5>CineOne21 Cinema</h5>
+              </div>
+                <div class="order__detail--title">
+                  <p>Spider-Man: Homecoming</p>
+                </div>
+              <div class="row order__detail">
+                <div class="col order__detail--info">
+                  <p>Movie selected</p>
+                  <p>Tuesday, 07 July 2020</p>
+                  <p>One ticket price</p>
+                  <p>Seat choosed</p>
+                </div>
+                <div class="col order__detail--desc">
+                  <p>Spider-Man: Homecoming</p>
+                  <p>02:00pm</p>
+                  <p>$10</p>
+                  <p>C4, C5, C6</p>
+                </div>
+              </div>
+              <div class="row order__payment">
+                <div class="col order__payment--total">
+                  <p>Total Payment</p>
+                </div>
+                <div class="col order__payment--price">
+                  <p>$30</p>
+                </div>
+              </div>
             </div>
-            <div class="col order__payment--price">
-              <p>$30</p>
+            <div class="seat__button--mobile">
+              <button class="btn btn-primary">Checkout now</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="container">
+      <div class="row footer">
+        <div class="col-4 footer__content">
+          <div class="footer__content--logo">
+            <img src="assets/img/Vector.png" alt="logoBerwarna">
+            <p>Stop waiting in line. Buy tickets <br>
+            conveniently, watch movies quietly.</p>
+          </div>
+        </div>
+        <div class="col-2 footer__content">
+            <h3>Explore</h3>
+          <div class="footer__content--header--desc">
+            <p>Cinemas</p>
+            <p>Movies list</p>
+            <p>My ticket</p>
+            <p>Notification</p>
+          </div>
+        </div>
+        <div class="col-3 footer__content">
+          <h3>Our Sponsor</h3>
+          <div class="footer__content--header--img">
+            <div class="footer__content--header--size">
+              <img src="assets/img/ebuid.png" alt="ebuid">
+            </div>
+            <div class="footer__content--header--size">
+              <img src="assets/img/cineone.png" alt="cineone">
+            </div>
+            <div class="footer__content--header--size">
+              <img src="assets/img/hiflix.png" alt="hiflix">
+            </div>
+          </div>
+        </div>
+        <div class="col-3 footer__content">
+          <h3>Follow Us</h3>
+          <div class="footer__content--header">
+            <div class="footer__content--page">
+              <img src="assets/img/facebook.png" alt="">
+              <p>Tickitz Cinema id</p>
+            </div>
+            <div class="footer__content--page">
+              <img src="assets/img/instagram.png" alt="">
+              <p>tickitz.id</p>
+            </div>
+            <div class="footer__content--page">
+              <img src="assets/img/twitter.png" alt="">
+              <p>tickitz.id</p>
+            </div>
+            <div class="footer__content--page">
+              <img src="assets/img/yt.png" alt="">
+              <p>Tickitz Cinema id</p>
+            </div>
+          </div>
+        </div>
 
-  </div>
+      <footer>© 2020 Tickitz. All Rights Reserved.</footer>
+      </div>
+    </div>
+
 
 
 
